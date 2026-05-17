@@ -20,6 +20,7 @@
   },
   "devDependencies": {
     "@slidev/types": "^52.15.2",
+    "playwright-chromium": "^1.60.0",
     "prettier": "^3.8.3",
     "prettier-plugin-slidev": "^1.0.5",
     "wrangler": "^4.92.0"
