@@ -17,12 +17,11 @@ layout: default
 
 ## 第4の壁: TS2799 — `createNormalizedTupleType`
 
-```ts {all|2-3|4|12}
+```ts {all|2-3|4|7-9}
 // checker.ts (v5.9.3)
 if (isTupleType(type)) {
   const elements = getElementTypes(type);
   if (elements.length + expandedTypes.length >= 10_000) {
-    /* Type_produces_a_tuple_type_that_is_too_large_to_represent */
     error(
       currentNode,
       isPartOfTypeNode(currentNode!)
@@ -32,7 +31,9 @@ if (isTupleType(type)) {
     return errorType;
   }
 }
+```
 
+```ts
 // BuildTuple の中で常に走っている処理
 type BuildTuple<L, T, Acc> =
   /* ... */ : BuildTuple<L, [...T, ...T], [...Acc, ...T]>;
