@@ -5,7 +5,7 @@ layout: default
 ## …しかし、エディタの赤波線が消えない 👀
 
 <div class="flex justify-center mt-4">
-  <img :src="'/images/2799_sample.png'" class="rounded shadow max-w-full" />
+  <img src="/images/2799_sample.png" class="rounded shadow max-w-full" />
 </div>
 
 - TS2589 は消えた

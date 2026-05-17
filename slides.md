@@ -35,11 +35,11 @@ duration: 10min
 
 <div class="pa-0 flex justify-center items-center">
   <div class="mr-2">
-    <img :src="'/images/qr.webp'"/>
+    <img src="/images/qr.webp"/>
     <p>Powered by <a href="https://sli.dev/" target="_blank">Slidev</a></p>
   </div>
   <div class="ml-2">
-    <img :src="'/images/qr_speakerdeck.webp'"/>
+    <img src="/images/qr_speakerdeck.webp"/>
     <p>Speaker Deck</p>
   </div>
 </div>
@@ -97,6 +97,6 @@ transition: fade
 
 ---
 
-<img v-drag="[629,307,286,194]" :src="'/images/end.webp'"/>
+<img v-drag="[629,307,286,194]" src="/images/end.webp"/>
 
 <SectionTitle title="ご清聴ありがとうございました！"/>
