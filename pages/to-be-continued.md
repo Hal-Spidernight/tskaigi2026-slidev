@@ -1,19 +1,15 @@
 ---
-layout: center
-class: text-center
-background: '#000'
+layout: default
 ---
 
-<div class="text-white">
-
-<div class="text-2xl opacity-80 mb-4">次回、`createNormalizedTupleType` との激闘…</div>
-
-<div class="text-7xl font-bold tracking-widest" style="font-family: serif;">
-TO BE<br/>CONTINUED...
-</div>
-
-<div class="text-xl opacity-60 mt-8">
-checker.ts チキンレース、第二章。
-</div>
-
-</div>
+<SectionCard class="flex items-center justify-center text-center">
+  <div>
+    <p class="text-lg opacity-60">checker.ts チキンレース、第二章。</p>
+    <h3 class="text-xl opacity-80 mt-2">
+      次回、<span class="font-bold text-blue">createNormalizedTupleType</span> との激闘…
+    </h3>
+  </div>
+  <p class="absolute bottom-10 right-18 text-2xl font-bold tracking-widest font-serif">
+    TO BE CONTINUED...
+  </p>
+</SectionCard>
