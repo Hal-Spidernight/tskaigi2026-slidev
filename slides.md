@@ -45,6 +45,51 @@ duration: 10min
 </div>
 
 ---
+src: ./pages/about-me.md
+transition: fade
+---
+
+---
+src: ./pages/intro.md
+transition: fade
+---
+
+---
+src: ./pages/walls-overview.md
+transition: fade
+---
+
+---
+src: ./pages/wall1-depth.md
+transition: fade
+---
+
+---
+src: ./pages/wall2-count.md
+transition: fade
+---
+
+---
+src: ./pages/wall3-tail.md
+transition: fade
+---
+
+---
+src: ./pages/binary-climbing.md
+transition: fade
+---
+
+---
+src: ./pages/wall4-tuple.md
+transition: fade
+---
+
+---
+src: ./pages/to-be-continued.md
+transition: slide-up
+---
+
+---
 level: 1
 src: ./pages/section7.md
 transition: fade
