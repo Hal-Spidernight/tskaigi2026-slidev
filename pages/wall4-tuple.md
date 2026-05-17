@@ -4,8 +4,12 @@ layout: default
 
 ## …しかし、エディタの赤波線が消えない 👀
 
+<script setup>
+const base = import.meta.env.BASE_URL
+</script>
+
 <div class="flex justify-center mt-4">
-  <img src="/images/2799_sample.png" class="rounded shadow max-w-full" />
+  <img :src="`${base}images/2799_sample.png`" class="rounded shadow max-w-full" />
 </div>
 
 - TS2589 は消えた
