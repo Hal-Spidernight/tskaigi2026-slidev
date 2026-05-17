@@ -1,0 +1,27 @@
+{
+  "name": "tskaigi2026-hal",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "slidev build",
+    "build:gh_pages": "slidev build --base /slide_tskaigi_hokuriku/",
+    "dev": "slidev --open",
+    "export": "slidev export --timeout 60000 --wait 10000 --with-clicks --dark --format png"
+  },
+  "dependencies": {
+    "@slidev/cli": "^52.15.2",
+    "@slidev/theme-default": "latest",
+    "@slidev/theme-seriph": "latest",
+    "@unocss/preset-wind3": "^66.6.8",
+    "mermaid": "^11.15.0",
+    "slidev-theme-hal": "^0.1.4",
+    "unocss": "^66.6.8",
+    "vue": "^3.5.33"
+  },
+  "devDependencies": {
+    "@slidev/types": "^52.15.2",
+    "prettier": "^3.8.3",
+    "prettier-plugin-slidev": "^1.0.5",
+    "wrangler": "^4.92.0"
+  }
+}
