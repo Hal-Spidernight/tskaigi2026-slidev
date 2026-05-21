@@ -38,13 +38,9 @@ const base = import.meta.env.BASE_URL
 </script>
 
 <div class="pa-0 flex justify-center items-center">
-  <div class="mr-2">
-    <img :src="`${base}images/qr.webp`"/>
-    <p>Powered by <a href="https://sli.dev/" target="_blank">Slidev</a></p>
-  </div>
-  <div class="ml-2">
-    <img :src="`${base}images/qr_speakerdeck.webp`"/>
-    <p>Speaker Deck</p>
+  <div class="h-100">
+    <img :src="`${base}images/qr.webp`" style="height:100%"/>
+    <p class="text-center">Powered by <a href="https://sli.dev/" target="_blank">Slidev</a></p>
   </div>
 </div>
 
