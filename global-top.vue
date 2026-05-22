@@ -10,24 +10,37 @@ const hideQR = computed(
 </script>
 
 <template>
-  <div v-if="!hideQR" class="qr-fixed">
-    <div class="qr-box">
-      <img :src="`${base}images/qr.webp`" alt="QR" />
+  <template v-if="!hideQR">
+    <div class="qr-fixed qr-top">
+      <div class="qr-box">
+        <img :src="`${base}images/qr.webp`" alt="QR" />
+      </div>
+      <div class="qr-label">スライドQR</div>
     </div>
-    <div class="qr-label">スライドQR</div>
-  </div>
+    <div class="qr-fixed qr-bottom">
+      <div class="qr-box">
+        <img :src="`${base}images/qr_hal.webp`" alt="HAL QR" />
+      </div>
+      <div class="qr-label">profile</div>
+    </div>
+  </template>
 </template>
 
 <style scoped>
 .qr-fixed {
   position: absolute;
-  top: 12px;
   right: 12px;
   z-index: 100;
   pointer-events: none;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.qr-top {
+  top: 12px;
+}
+.qr-bottom {
+  bottom: 12px;
 }
 .qr-box {
   width: 72px;

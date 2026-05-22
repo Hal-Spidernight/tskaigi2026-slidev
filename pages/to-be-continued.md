@@ -1,5 +1,6 @@
 ---
 layout: default
+hideQR: true
 ---
 
 <SectionCard class="flex items-center justify-center text-center">

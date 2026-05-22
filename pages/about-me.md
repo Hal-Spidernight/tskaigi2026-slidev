@@ -2,6 +2,7 @@
 layout: image-right
 image: /images/icon.webp
 backgroundSize: 70%
+hideQR: true
 class: font-bold
 ---
 
