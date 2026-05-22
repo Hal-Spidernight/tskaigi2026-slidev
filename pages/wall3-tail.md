@@ -30,10 +30,12 @@ layout: default
 
 <h4 class="mt-10">エラーを再現するコード</h4>
 
-```ts {all|3-5}
+```ts {all|3-5|7}
 type CountTo1000<N extends any[]> = N["length"] extends 1001
   ? "Success"
   : CountTo1000<[...N, any]>;
 //  ^^^^^^^^^^^^^^^^^^^^^^^^^
 //  そのまま末尾位置で呼ぶだけ → コンパイラがループに変換(スタック不要)
+
+type Result = CountTo1000<[]>; // → TS2589 (1000回で打ち止め)
 ```

@@ -30,10 +30,12 @@ layout: default
 
 <h4 class="mt-10">エラーを再現するコード</h4>
 
-```ts {all|3-5}
+```ts {all|3-5|7}
 type DeepStack<N extends any[]> = N["length"] extends 48
   ? { done: true }
   : { step: N["length"] } & DeepStack<[...N, any]>;
 //                       ^^^
 //  交差型 & を間に挟む → 関数を抜けるまでスタックが積まれ続ける
+
+type Result = DeepStack<[]>; // → TS2589 (48ステップで天井)
 ```

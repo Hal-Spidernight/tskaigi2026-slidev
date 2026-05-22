@@ -21,17 +21,12 @@ layout: default
 
 ## 第4の壁: TS2799 — `createNormalizedTupleType`
 
-```ts {all|2-3|4|7-9}
+```ts {all|2-3|4|5}
 // checker.ts (v5.9.3)
 if (isTupleType(type)) {
   const elements = getElementTypes(type);
   if (elements.length + expandedTypes.length >= 10_000) {
-    error(
-      currentNode,
-      isPartOfTypeNode(currentNode!)
-          ? Diagnostics.Type_produces_a_tuple_type_that_is_too_large_to_represent
-          : Diagnostics.Expression_produces_a_tuple_type_that_is_too_large_to_represent,
-    );
+    error(currentNode, Diagnostics.Type_produces_a_tuple_type_that_is_too_large_to_represent);
     return errorType;
   }
 }

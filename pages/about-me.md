@@ -11,5 +11,9 @@ class: font-bold
     <p style="white-space:pre-wrap">{{"株式会社LIXIL\r\nアプリケーションエキスパート"}}</p>
     <h2>Hal</h2>
 </div>
-<p>Vue.js / Nuxt, TypeScript,Google Cloud, Python, Rust, パフォーマンスチューニング</p>
-<p>一眼レフ, 映画鑑賞, サイクリング</p>
+<div class="my-0">
+    <p>Vue.js / Nuxt, TypeScript</p>
+    <p>Google Cloud, Python, Rust</p>
+    <p>パフォーマンスチューニング</p>
+    <p class="mt-4">一眼レフ, 映画鑑賞, サイクリング</p>
+</div>
