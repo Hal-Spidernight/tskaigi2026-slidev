@@ -63,12 +63,27 @@ transition: fade
 ---
 
 ---
+src: ./pages/wall1-checker.md
+transition: fade
+---
+
+---
 src: ./pages/wall2-count.md
 transition: fade
 ---
 
 ---
+src: ./pages/wall2-checker.md
+transition: fade
+---
+
+---
 src: ./pages/wall3-tail.md
+transition: fade
+---
+
+---
+src: ./pages/wall3-checker.md
 transition: fade
 ---
 
