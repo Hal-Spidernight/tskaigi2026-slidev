@@ -18,6 +18,7 @@ info: |
   TSKaigi 2026で発表するスライドです
 # apply UnoCSS classes to the current slide
 class: 'text-center font-bold'
+hideQR: true
 # https://sli.dev/features/drawing
 drawings:
   persist: true
@@ -29,6 +30,8 @@ mdc: true
 duration: 10min
 ---
 
+---
+hideQR: true
 ---
 
 ## 本日のスライド
@@ -91,11 +94,14 @@ transition: slide-up
 
 ---
 level: 1
+hideQR: true
 src: ./pages/section7.md
 transition: fade
 ---
 
 ---
+hideQR: true
+--- 
 
 <script setup>
 const base = import.meta.env.BASE_URL
