@@ -48,11 +48,6 @@ const base = import.meta.env.BASE_URL
 </div>
 
 ---
-src: ./pages/about-me.md
-transition: fade
----
-
----
 src: ./pages/intro.md
 transition: fade
 ---
@@ -96,6 +91,11 @@ transition: slide-up
 level: 1
 hideQR: true
 src: ./pages/section7.md
+transition: fade
+---
+
+---
+src: ./pages/about-me.md
 transition: fade
 ---
 
