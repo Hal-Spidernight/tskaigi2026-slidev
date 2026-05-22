@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## …しかし、エディタの赤波線が消えない 👀
+## …しかし、エラーが消えない 👀
 
 <script setup>
 const base = import.meta.env.BASE_URL
